@@ -41,7 +41,7 @@ const HomePage = () => {
 
   return (
     <>
-    <div className='container mx-auto px-2 md:px-12 my-8'>
+    <div className=' mx-auto px-2 md:px-12 my-8'>
     <HeroCarousel />
     </div>
     

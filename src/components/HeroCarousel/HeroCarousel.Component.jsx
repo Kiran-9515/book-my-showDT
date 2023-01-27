@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import HeroSlider from "react-slick";
-import { NextArrow, PrevArrow } from "./Arrow.Component";
+
 
 const HeroCarousel =() =>{
     
@@ -39,34 +39,63 @@ const HeroCarousel =() =>{
         video: false,
         vote_average: 7.4,
         vote_count: 346,
-      }
+      },
+      {
+      adult:false,
+      backdrop_path:"/yYrvN5WFeGYjJnRzhY0QXuo4Isw.jpg",
+      genre_ids:[28,12,878],
+      id:505642,
+      original_language:"en",
+      original_title:"Black Panther: Wakanda Forever",
+      overview:"Queen Ramonda, Shuri, M’Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T’Challa’s death. As the Wakandans strive to embrace their next chapter, the heroes must band together with the help of War Dog Nakia and Everett Ross and forge a new path for the kingdom of Wakanda.",
+      popularity:1219.176,
+      poster_path:"/sv1xJUazXeYqALzczSZ3O6nkH75.jpg",
+      release_date:"2022-11-09","title":"Black Panther: Wakanda Forever",
+      video:false,
+      vote_average:7.5,
+      vote_count:1683,
+    },
+    {"adult":false,
+    "backdrop_path":"/Aqldsq65Nj1KAkQD2MzkZsAk5N5.jpg",
+    "genre_ids":[28,53,18],
+    "id":846433,
+    "original_language":"en",
+    "original_title":"The Enforcer",
+    "overview":"A noir thriller set in Miami, the film follows an enforcer who discovers his femme fatale boss has branched out into cyber sex trafficking, putting a young runaway he’s befriended at risk. He sacrifices everything to save the young girl from the deadly organization he’s spent his life building.",
+    "popularity":2153.96,
+    "poster_path":"/72V1r1G8S87ELagVxjqAUdChMCt.jpg",
+    "release_date":"2022-09-22",
+    "title":"The Enforcer",
+    "video":false,
+    "vote_average":6.9,
+    "vote_count":73}
     ]
     );
 
     const settingsLG ={
-      arrows: true,
+      arrow: true, 
+      className: "center",
+      centerMode: true,
+      centerPadding: "60px",
+      focusOnSelect: true,
+      dots: true,
       infinite: true,
       slidesToShow: 1,
-      nextArrow: <NextArrow />,
-      prevArrow: <PrevArrow />,
+      slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
-      cssEase: "linear"
+      autoplaySpeed: 2000
     }
 
     const settings ={
       arrows: true,
       infinite: true,
       slidesToShow: 1,
-      nextArrow: <NextArrow />,
-      prevArrow: <PrevArrow />,
       autoplay: true,
       speed: 2000,
       autoplaySpeed: 2000,
       cssEase: "linear"
     }
-
+    
     return (
       <>
         <div className="lg:hidden">
