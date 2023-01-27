@@ -4,7 +4,7 @@ import HeroSlider from "react-slick";
 
 const HeroCarousel =() =>{
     
-    const [images, setImages]= useState(
+    const [images]= useState(
         [
             {
         adult: false,
