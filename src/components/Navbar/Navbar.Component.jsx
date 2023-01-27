@@ -1,5 +1,7 @@
 import React from 'react';
 import {BiChevronDown, BiMenu, BiSearch} from "react-icons/bi";
+import {GiClick} from "react-icons/gi"
+import { Link } from 'react-router-dom';
 
 function NavSm(){
   return <>
@@ -96,14 +98,39 @@ const Navbar = () => {
     <nav className='bg-darkBackground-800 py-1'>
     <div className='hidden md:hidden lg:flex'>
         <div className='container flex mx-auto items-center gap-3 px-4'>
-          <span className='text-sm text-gray-200  flex items-center cursor-pointer hover:text-white'>
-          Movies</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
-          Stream</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
-          Events</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
-          Plays</span><span className='text-sm text-gray-200  flex items-center cursor-pointer hover:text-white'>
-          Sports</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
-          Activies</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+        <Link to={``}>
+        <span className='text-sm text-gray-200  flex items-center cursor-pointer hover:text-white'>
+          Movies</span>
+        </Link>
+        <Link to={``}>
+          <span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Stream</span>
+        </Link>
+          <Link to={``}>
+        <span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Events</span>
+        </Link>
+
+          <Link to={`/Plays`}>
+        <span className='text-sm font-bold text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Plays<GiClick/></span>
+        </Link>
+
+          <Link to={``}>
+        <span className='text-sm text-gray-200  flex items-center cursor-pointer hover:text-white'>
+          Sports</span>
+        </Link>
+
+          <Link to={``}>
+        <span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Activies</span>
+        </Link>
+
+          <Link to={``}>
+        <span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
           Buss</span>
+        </Link>
+
         </div>
       </div>
     </nav>

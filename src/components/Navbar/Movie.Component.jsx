@@ -94,6 +94,20 @@ const MovieNavbar = () => {
       </div>
 
     </nav>
+    <nav className='bg-darkBackground-800 py-1'>
+    <div className='hidden md:hidden lg:flex'>
+        <div className='container flex mx-auto items-center gap-3 px-4'>
+          <span className='text-sm text-gray-200  flex items-center cursor-pointer hover:text-white'>
+          Movies</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Stream</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Events</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Plays</span><span className='text-sm text-gray-200  flex items-center cursor-pointer hover:text-white'>
+          Sports</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Activies</span><span className='text-sm text-gray-200 flex items-center cursor-pointer hover:text-white'>
+          Buss</span>
+        </div>
+      </div>
+    </nav>
     </>
   )
 }

@@ -8,7 +8,7 @@ import HeroCarousel from '../components/HeroCarousel/HeroCarousel.Component';
 
 const Plays = () => {
 
-  const [images, setImages]= useState(
+  const [images]= useState(
     [
       {"adult":false,
       "backdrop_path":"/sBOenwOZGRN5nZZGw4TxwtnfrEf.jpg",
@@ -107,24 +107,39 @@ return (
           </div> 
           <div className="lg:w-3/12">
             <h2 className="text-2xl font-bold mb-4">Filters</h2>
+            <div className='border-2 border-gray-200 px-3 py-2 rounded-lg mb-2'>
             <PlaysFilters 
                 title="Date" 
                 tags={["Today", "Tomorrow", "This Weekend"]} />
+            </div>
+            <div className='border-2 border-gray-200 px-3 py-2 rounded-lg mb-2'>
             <PlaysFilters 
                 title="Language" 
                 tags={["Tamil", "Telegu", "English"]} />
+            </div>
+            <div className='border-2 border-gray-200 px-3 py-2 rounded-lg mb-2'>
             <PlaysFilters 
                 title="Categories" 
                 tags={["Theatre", "Storytelling"]} />
+            </div>
+            <div className='border-2 border-gray-200 px-3 py-2 rounded-lg mb-2'>
             <PlaysFilters 
                 title="Genres" 
                 tags={["Drama", "Musical"]} />
+            </div>
+            <div className='border-2 border-gray-200 px-3 py-2 rounded-lg mb-2'>
             <PlaysFilters 
                 title="More Filters" 
                 tags={["Outdoor Events", "Children Theatre", "International Plays", "Online Streaming"]} />
+            </div>
+            <div className='border-2 border-gray-200 px-3 py-2 rounded-lg mb-2'>
             <PlaysFilters 
                 title="Price" 
                 tags={["Free", "0-500", "501-2000", "Above 2000"]} />
+            </div>
+            <div className="border-2 border-red-400 px-3 py-2 flex justify-evenly mb-2" >
+              <span className="text-red-700">Browse by Venues</span>
+            </div>
           </div>
         </div>
       </div> 
