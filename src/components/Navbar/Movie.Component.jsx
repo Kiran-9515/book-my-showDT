@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import {BiChevronDown, BiMenu, BiSearch, BiShareAlt} from "react-icons/bi";
 import { MovieContext } from '../../context/Movie.context';
+import { Link } from 'react-router-dom';
+import {GiClick} from "react-icons/gi"
+
 
 const NavSm = () => {
   const {movie} = useContext(MovieContext);
